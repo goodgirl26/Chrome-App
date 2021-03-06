@@ -49,3 +49,7 @@ It's similar to if/else statement.
   }:${seconds < 10 ? `0${seconds}` : seconds}`;`
 
 (condition) ? true : false
+
+## 2. Saving the User Name
+
+
