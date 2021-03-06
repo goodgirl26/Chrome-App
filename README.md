@@ -52,4 +52,24 @@ It's similar to if/else statement.
 
 ## 2. Saving the User Name
 
+Local Storage is that saving your user's info into their computer.
 
+In this case, first time you visit this page, it will ask your name and you will press the enter key.
+
+And then, your browser will save your name into your Local Storage.
+
+Next time, you don't have to submit your name again!
+
+because your name already saved in your Local Storage.
+
+first of all, get localstorage info with 'localStorage.getItem()'
+
+` const currentUser = localStorage.getItem(USER_LS);`
+
+first time you visit, Local Storage will return 'null'
+
+`if (currentUser === null) { askForName(); } `
+
+if you not , browser will paint your info
+
+`else { paintGreeting(currentUser); }`
