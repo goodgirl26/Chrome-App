@@ -1,4 +1,4 @@
-###### Making Chrome App with VanilaJS!
+# Making Chrome App with VanilaJS!
 
 ---
 
