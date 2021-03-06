@@ -26,11 +26,15 @@ you can get current Secomds from data.
 `const seconds = date.getSeconds() `
 
 And, put them to html!
+
 `clockTitle.innerText = `${hours}:${minutes}:${seconds}`;`
 
 ## Problem
 
 I have to refresh to update the date.
+
 It's not cool.
+
 There's a key to solve this problem!
+
 It's 'setInterval'
