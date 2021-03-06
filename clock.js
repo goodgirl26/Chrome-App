@@ -1,7 +1,7 @@
 const clockContainer = document.querySelector(".js-clock");
 const clockTitle = document.querySelector("h1");
 
-function getTIme() {
+function getTime() {
   const date = new Date();
   const minutes = date.getMinutes();
   const hours = date.getHours();
@@ -10,7 +10,8 @@ function getTIme() {
 }
 
 function init() {
-  getTIme();
+  getTime(); // get current Time
+  setInterval(getTime, 1000); // set time per seconds
 }
 
 init();
