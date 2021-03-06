@@ -10,7 +10,7 @@
 
 ---
 
-## 1. Making a JS Clock
+### 1. Making a JS Clock
 
 first, you can get date from "new Date()".
 
@@ -29,7 +29,7 @@ And, put them to html!
 
 `clockTitle.innerText = `${hours}:${minutes}:${seconds}`;`
 
-## setInterval
+#### setInterval
 
 I have to refresh to update the date.
 
@@ -41,7 +41,7 @@ It's 'setInterval'
 
 `function init() { getTime(); // get current Time setInterval(getTime, 1000); // set time per seconds }`
 
-## ternary operator
+#### ternary operator
 
 It's similar to if/else statement.
 
@@ -50,7 +50,9 @@ It's similar to if/else statement.
 
 (condition) ? true : false
 
-## 2. Saving the User Name
+### 2. Saving the User Name
+
+#### Local Storage
 
 Local Storage is that saving your user's info into their computer.
 
