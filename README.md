@@ -1,16 +1,16 @@
-# Making Chrome App with VanilaJS!
+# Making Chrome App with VanilaJS ❤
 
 ---
 
-1. Making a JS Clock
-2. Saving the User Name
-3. Making a To Do List
-4. Image Background
-5. Getting the Weather
+✔ Making a JS Clock
+✔ Saving the User Name
+✔ Making a To Do List
+✔ Image Background
+✔ Getting the Weather
 
 ---
 
-### 1. Making a JS Clock
+### 1️⃣ Making a JS Clock
 
 first, you can get date from "new Date()".
 
@@ -29,7 +29,7 @@ And, put them to html!
 
 `clockTitle.innerText = `${hours}:${minutes}:${seconds}`;`
 
-#### setInterval
+#### ❗ setInterval
 
 I have to refresh to update the date.
 
@@ -41,7 +41,7 @@ It's 'setInterval'
 
 `function init() { getTime(); // get current Time setInterval(getTime, 1000); // set time per seconds }`
 
-#### ternary operator
+#### ❗ ternary operator
 
 It's similar to if/else statement.
 
@@ -50,9 +50,9 @@ It's similar to if/else statement.
 
 (condition) ? true : false
 
-### 2. Saving the User Name
+### 2️⃣ Saving the User Name
 
-#### Local Storage
+#### ❗ Local Storage
 
 Local Storage is that saving your user's info into their computer.
 
@@ -75,3 +75,33 @@ first time you visit, Local Storage will return 'null'
 if you not , browser will paint your info
 
 `else { paintGreeting(currentUser); }`
+
+### 3️⃣ Making a Todo List
+
+Let's make functions..
+
+handleSubmit() 👉 loadToDos() 👉 paintToDo() 👉 saveToDos() 👉 deleteToDo()
+
+#### ❗ JSON.stringify() / JSON.parse()
+
+LocalStorage can't save Javascript Object data.
+
+You should convert Javascript object data to stirng data
+
+JSON.stringify() : Javascript data into string data.
+
+JSON.parse() : String data into Javascript data.
+
+#### ❗ array.forEach()
+
+` parsedToDos.forEach(function (toDo) { paintToDo(toDo.text); });`
+
+The forEach() method executes a provided function once for each array element.
+
+#### ❗ array.filter()
+
+`const cleanToDos = toDos.filter(function (toDo) { return toDo.id !== parseInt(li.id);`
+
+The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+
+---
