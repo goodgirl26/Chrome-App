@@ -171,3 +171,7 @@ A basic fetch request is really simple to set up.
 This is just an HTTP response, not the actual JSON. To extract the JSON body content from the response, we use the json() method (defined on the Body mixin, which is implemented by both the Request and Response objects.)
 
 ---
+
+### Try it out
+
+https://goodgirl26.github.io/Chrome-App/
