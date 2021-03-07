@@ -129,3 +129,24 @@ then it will return like 1.12535486465 or 4.52654321635
 If you want to get a floor number,
 
 `Math.floor(Math.random() * 5)`
+
+### 5️⃣ Getting the Weather
+
+Part 1. Make Functions
+
+init() 👉 loadCoords() 👉 askForCoords() 👉 handleGeoSuccess() 👉 handleGeoError() 👉 saveCoords()
+
+#### ❗ navigator.geolocation.getCurrentPosition()
+
+The navigator.geolocation.getCurrentPosition() method require two functions. One is when you success to bring your geolocation and the other is when you failed.
+
+success : `function handleGeoSuccess(position) { const latitude = position.coords.latitude; const longitude = position.coords.longitude; const coords = { latitude: latitude, longitude: longitude, }; saveCoords(coords); }`
+
+failed: function handleGeoError() {
+console.log("Cant access geolocation");
+}`
+
+Don't forget convert your Javascript Object data to string data
+😁
+
+`JSON.stringify(coords)`
