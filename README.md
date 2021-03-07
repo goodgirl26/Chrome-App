@@ -82,7 +82,7 @@ if you not , browser will paint your info
 
 ### 3️⃣ Making a Todo List
 
-Let's make functions..
+◾ Let's make functions!
 
 handleSubmit() 👉 loadToDos() 👉 paintToDo() 👉 saveToDos() 👉 deleteToDo()
 
@@ -110,7 +110,7 @@ The filter() method creates a new array with all elements that pass the test imp
 
 ### 4️⃣ Image Background
 
-Let's make funtions!
+◾ Let's make funtions!
 
 init() 👉 genRandom() 👉 paintImage()
 
@@ -132,9 +132,9 @@ If you want to get a floor number,
 
 ### 5️⃣ Getting the Weather
 
-Part 1. Make Functions
+◾ Make Functions
 
-init() 👉 loadCoords() 👉 askForCoords() 👉 handleGeoSuccess() 👉 handleGeoError() 👉 saveCoords()
+init() 👉 loadCoords() 👉 askForCoords() 👉 handleGeoSuccess() 👉 handleGeoError() 👉 saveCoords() 👉 getWeather()
 
 #### ❗ navigator.geolocation.getCurrentPosition()
 
@@ -142,11 +142,32 @@ The navigator.geolocation.getCurrentPosition() method require two functions. One
 
 success : `function handleGeoSuccess(position) { const latitude = position.coords.latitude; const longitude = position.coords.longitude; const coords = { latitude: latitude, longitude: longitude, }; saveCoords(coords); }`
 
-failed: function handleGeoError() {
-console.log("Cant access geolocation");
-}`
+failed: `function handleGeoError() { console.log("Cant access geolocation"); }`
 
 Don't forget convert your Javascript Object data to string data
 😁
 
 `JSON.stringify(coords)`
+
+#### ❗ Javascript expression
+
+`const coords = { latitude: latitude, longitude: longitude, }`
+
+it is same to
+
+` const coords = { latitude, longitude, }`
+
+#### ❗ fetch()
+
+The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses.
+
+`fetch( `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`
+)`
+
+A basic fetch request is really simple to set up.
+
+`fetch('http://example.com/movies.json') .then(response => response.json()) .then(data => console.log(data));`
+
+This is just an HTTP response, not the actual JSON. To extract the JSON body content from the response, we use the json() method (defined on the Body mixin, which is implemented by both the Request and Response objects.)
+
+---
