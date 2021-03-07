@@ -31,6 +31,37 @@ Local Storage는 URL을 기초로 동작한다.
 => 이 웹사이트는 facebook이 거기에 넣은 localstorage를 가져올순없다.
 
 
+local Stroage에는 자바스크립트의 데이터를 저장할 수 없다.
+오직 string만 저장할 수 있다.
+==. 자바스크립트는 local storage에 있는 모든 데이터를 string으로 저장
+하려고 한다.
+==> JSON.stringify는 자바스크립트 object를 string으로 바꿔준다.
+
+
+
+
+
+Math.random()에서 5까지의 임의의 수는
+Math.random() * 5로 쓴다.
+
+소숫점 아래를 버리기 위해선,
+Math.floor를 쓰면 된다.
+Math.ceil()은 올림
+Math.floor()은 버림
+
+
+
+
+
+
+이미지 로딩이 안되는 이유는 API에서 나온게 아니기 때문이야.
+지금 우리는 원격으로 하는 것이기 때문에
+image.addEventListener("loadend", handleImgLoad);를 할 필요가 없어.
+만약 api로 하는 것이면
+ image.addEventListener("loadend", handleImgLoad); 를 해야된다.
+
+
+
 
 
 

@@ -109,3 +109,27 @@ The forEach() method executes a provided function once for each array element.
 The filter() method creates a new array with all elements that pass the test implemented by the provided function.
 
 ---
+
+### 4️⃣ Image Background
+
+Let's make funtions!
+
+init() 👉 genRandom() 👉 paintImage()
+
+#### ❗ Math.random()
+
+The Math.random() method brings you a random number.
+
+If you want to get a random number under 5,
+
+`Math.random() * 5`
+
+then it will return like 1.12535486465 or 4.52654321635
+
+#### ❗ Math.floor()
+
+If you want to get a floor number,
+
+`Math.floor(Math.random() * 5)`
+
+---
