@@ -132,7 +132,7 @@ If you want to get a floor number,
 
 ### 5️⃣ Getting the Weather
 
-◾ Make Functions
+◾ Let's make functions!
 
 init() 👉 loadCoords() 👉 askForCoords() 👉 handleGeoSuccess() 👉 handleGeoError() 👉 saveCoords() 👉 getWeather()
 
