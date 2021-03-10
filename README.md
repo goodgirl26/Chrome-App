@@ -2,19 +2,25 @@
 
 ---
 
-✔ Making a JS Clock
+✔ Making a JS Clock : clock.js
 
-✔ Saving the User Name
+✔ Saving the User Name : greeting.js
 
-✔ Making a To Do List
+✔ Making a To Do List : todo.js
 
-✔ Image Background
+✔ Image Background : bg.js
 
-✔ Getting the Weather
+✔ Getting the Weather : weather.js
 
 ---
 
 ### 1️⃣ Making a JS Clock
+
+◾ Let's make functions!
+
+init() 👉 getTime()
+
+#### ❗ new Date()
 
 first, you can get date from "new Date()".
 
